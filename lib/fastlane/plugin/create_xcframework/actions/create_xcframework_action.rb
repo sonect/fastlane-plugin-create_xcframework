@@ -140,7 +140,7 @@ module Fastlane
             params[:xcargs].gsub!(/SKIP_INSTALL(=|\s+)(YES|NO)/, '')
             params[:xcargs].gsub!(/BUILD_LIBRARY_FOR_DISTRIBUTION(=|\s+)(YES|NO)/, '')
           end
-          xcargs.concat(['SKIP_INSTALL=NO', 'BUILD_LIBRARY_FOR_DISTRIBUTION=YES'])
+          xcargs.concat(['SKIP_INSTALL=YES', 'BUILD_LIBRARY_FOR_DISTRIBUTION=YES'])
         end
 
         if params[:enable_bitcode] != false
